@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
+</head>
+<body>
+    <div id="home">
+    <div class="home">
+        <nav class="nav" id="desktop-nav">
+            <div id="logo">SD</div>
+            <div class="navbar">
+                <a href="#aboutme">About</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div id="logo">SD</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <li><a href="#aboutme" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </nav>
+        <section id="detail">
+            <div class="detail">
+                <div class="detail-img">
+                    <img src="./asset/myphoto.jpeg" alt="img" id="myphoto">
+                </div>
+                <div id="detail-section">
+                    <div id="detail-section-info">
+                        <p id="p">Hello, I'm </p>
+                        <h1 id="name">Sakshi Dubey</h1>
+                        <p id="profession">Frontend Developer</p>
+                    </div>
+                    <div>
+                        <div id="btn">
+                            <button id="btn-1">Resume</button>
+                            <button id="btn-2" onclick="location.href='./#contact'">Contact Info</button>
+                        </div>
+                    
+                        <div id="social-media">
+                            <img src="./asset/linkedin.png" alt="linkedin" onclick="location.href='https://www.linkedin.com/in/dubeysakshi/'">
+                            <img src="./asset/github.png" alt="github" onclick="location.href='https://github.com/Sakshi192124'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./asset/arrow.png" alt="arrow-icon" class="arrow-1" 
+            onclick="location.href='./#aboutme'"> 
+        </section>
+    </div>
+    </div>
+    <section id="about">
+       <div id="aboutme">
+            <div>
+                <p id="gettoknowmore">Get To Know More</p>
+                <h2 class="aboutme">About Me</h2>
+            </div>
+            <div class="about">
+                <div>
+                    <img src="./asset/photo1.jpg" alt="img" class="img">
+                </div>
+                <div>
+                    <div id="experience">
+                        <div class="edu">
+                            <div id="experience-logo">
+                                <img src="./asset/experience.png" class="experience">
+                                <h3>Experience</h3>
+                                <p>Fresher </p>
+                            </div>
+                            <div id="education-logo">
+                                <img src="./asset/education.png" class="education">
+                                <h3>Education</h3>
+                                <p>B.Tech.<br>(Bachelor of Technology)</p>
+                            </div>
+                        </div>
+                        <div id="detail-container">
+                            <p>I'm Sakshi Dubey, an aspiring Full-Stack Developer.
+                                I have created responsive and user-friendly 
+                                websites using HTML, CSS, JavaScript,
+                                and Bootstrap.<br><br>
+
+                                Currently exploring the back-end Technologies
+                                such as Nodejs, Expressjs, Mongodb, SQL etc.
+                                Technologies I have learned in front-end 
+                                development are HTML, CSS, JavaScript, and 
+                                Bootstrap.
+                                <br><br>
+                                Recently graduated with a Bachelor of Technology -
+                                ready for new challenges and opportunities. 
+                                Excited to leverage my skills in upcoming ventures.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./asset/arrow.png" alt="arrow-icon" class="arrow-1 arrow arrow-icon" 
+            onclick="location.href='./#skill'"> 
+        </div>  
+    </section>
+    <section class="skill-section">
+        <div id="skill">
+            <p id="exploremy">Explore My</p>
+            <h1>Skill</h1>
+            <div class="skill">           
+                <div id="skill-container1">
+                    <h2>Frontend Development</h2>
+                    <div class="skill-container">
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>Bootstrap</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill-container2">
+                    <h2>Backend Development</h2>
+                    <div class="skill-container">
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>JAVA</h3>
+                            <p>Beginner</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>C</h3>
+                            <p>Beginner</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>Nodejs</h3>
+                            <p>Beginner</p>
+                        </div>
+                        <div>
+                            <img src="./asset/checkmark.png" alt="checkmark" class="checkmark">
+                            <h3>Github</h3>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+            <img src="./asset/arrow.png" alt="arrow-icon" class="arrow-icon" 
+            onclick="location.href='./#project'">
+        </div>  
+    </section>
+    <section id="port">
+        <div id="project">
+            <div class="project">
+                <p id="browsemyrecent">Browse My Recent</p>
+                <h2>Portfolio</h2>
+                <div class="portfolio btn">
+                    <div class="port-img">
+                        <img src="./asset/spotify.png" alt="spotify">
+                        <h3>Spotify Clone</h3>
+                        <div class="btn">
+                            <button onclick="location.href='https://github.com/Sakshi192124/Spotify-Clone'">GitHub</button>
+                            <button onclick="location.href='https://sakshi192124.github.io/Spotify-Clone/'">Live Demo</button>
+                        </div> 
+                    </div>
+                    <div class="port-img ">
+                        <img src="./asset/sidepanel.png" alt="sidepanel">
+                        <h3>Side Panel</h3>
+                        <div class="btn">
+                            <button onclick="location.href='https://github.com/Sakshi192124/Side-Panel'">GitHub</button>
+                            <button onclick="location.href='https://sakshi192124.github.io/Side-Panel/'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="port-img">
+                        <img src="./asset/tictactoe.png" alt="tictactoe">
+                        <h3>tic tac toe</h3>
+                        <div class="btn">
+                            <button onclick="location.href='https://github.com/Sakshi192124/Tic-Tac-Toe'">GitHub</button>
+                            <button onclick="location.href='https://sakshi192124.github.io/Tic-Tac-Toe/'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="port-img">
+                        <img src="./asset/rps.png" alt="rps">
+                        <h3>Rock, Paper, and Scissor</h3>
+                        <div class="btn">
+                            <button onclick="location.href='https://github.com/Sakshi192124/Rock-Paper-Scissors'">GitHub</button>
+                            <button onclick="location.href='https://sakshi192124.github.io/Rock-Paper-Scissors/'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="arrow-icon" class="arrow-icon" 
+        onclick="location.href='./#contact'"> 
+    </section>
+    <section>
+        <div id="contact">
+            <div class="contact">
+                <p class="getintouch">Get in Touch</p>
+                <h3>Contact</h3>
+                <div id="contact-form">
+                    <div class="social-media">
+                        <div class="contact-info">
+                            <img src="./asset/email.png" class="email " for="email">
+                            <br>
+                            <p>Email</p>
+                            <a href="mailto:sakshiduby1924@gmail.com" id="email">Send me a message </a>
+                        </div>
+                        <br>
+                        <div class="contact-info">
+                            <img src="./asset/linkedin.png" class="link " for="link">
+                           <br><p>Linkedin</p>
+                            <a href="https://www.linkedin.com/in/dubeysakshi/" id="link">Let's connect</a>
+                        </div>
+                        <br>
+                        <div class="contact-info">
+                            <img src="./asset/github.png" class="link ">
+                            <br>
+                            <p>GitHub</p>
+                            <a href="https://github.com/Sakshi192124">My work</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="form">
+                        <form  id="loginForm" name="submit-to-google-sheet">
+                            <input type="text" id="username" name="Name" placeholder="Enter your name"><br>
+                            <input type="text" id="email" name="Email" placeholder="Enter your Email"><br>
+                            <textarea id="message" name="Message" rows="10" cols="12" placeholder="You can give your feedback here..."></textarea>
+                            <br>
+                            <button class="submit" id="submitbtn">Submit</button>
+                        </form>
+                        <span id="span"></span>
+                    </div>
+                </div> 
+                <br>                
+            </div>
+        </div>
+    </section>
+    <footer>
+            <div class="nav-links-container">
+                <div class="navbar foot">
+                    <a href="#home">Home</a>
+                    <a href="#aboutme">About</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#project">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        <p>Copyright &#169; 2023 Sakshi Dubey. All Rights Reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+      <!-- <script>
+           let form = document.querySelector("form");
+           form.addEventListener('submit',(e) => {
+            let data = new FormData(form);
+            fetch('https://script.google.com/macros/s/AKfycbxRmiH9DHIfEeYta8plKvAKxXORy6JV90p9TsX3_M1gZSg0MfjX3EzGsI317EMMYD-R/exec',{
+                method:"POST",
+                body: data
+            })
+                .then(res => res.text())
+                .then(data => console.log(data));
+           })
+      </script> -->
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDHf262fv8RyR6WQ0ZDFrLkRhdGQJenNZ1P6_FgLIIoR5s6zg8nmFJxdR_9hgttzMj/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("span")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully."
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
